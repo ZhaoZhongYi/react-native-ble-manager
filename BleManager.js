@@ -1,5 +1,8 @@
 'use strict';
 var React = require('react-native');
+import {
+  Platform,
+} from 'react-native';
 var bleManager = React.NativeModules.BleManager;
 
 class BleManager  {
@@ -89,15 +92,25 @@ class BleManager  {
     });
   }
 
-  connect(peripheralId) {
+  connect(peripheralId,isNotifyOnConnection=false,isNotifyOnDisconnection=false,isNotifyOnNotification=false) {
     return new Promise((fulfill, reject) => {
-      bleManager.connect(peripheralId, (error) => {
-        if (error) {
-          reject(error);
-        } else {
-          fulfill();
-        }
-      });
+      if(Platform.OS == "android"){
+        bleManager.connect(peripheralId, (error) => {
+          if (error) {
+            reject(error);
+          } else {
+            fulfill();
+          }
+        });
+      }else{
+        bleManager.connect(peripheralId,isNotifyOnConnection,isNotifyOnDisconnection,isNotifyOnNotification, (error) => {
+          if (error) {
+            reject(error);
+          } else {
+            fulfill();
+          }
+        });
+      }
     });
   }
 

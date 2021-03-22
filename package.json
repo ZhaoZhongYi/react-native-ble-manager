@@ -1,16 +1,36 @@
 {
-  "name": "react-native-ble-manager",
-  "version": "6.6.10",
-  "description": "A BLE module for react native.",
-  "main": "BleManager",
-  "types": "./index.d.ts",
-  "repository": {
+  "_from": "git+https://git@github.com/zhanguangao/react-native-ble-manager.git",
+  "_id": "react-native-ble-manager@6.6.10",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/react-native-ble-manager",
+  "_phantomChildren": {},
+  "_requested": {
     "type": "git",
-    "url": "https://github.com/innoveit/react-native-ble-manager.git"
+    "raw": "git+https://git@github.com/zhanguangao/react-native-ble-manager.git",
+    "rawSpec": "git+https://git@github.com/zhanguangao/react-native-ble-manager.git",
+    "saveSpec": "git+https://git@github.com/zhanguangao/react-native-ble-manager.git",
+    "fetchSpec": "https://git@github.com/zhanguangao/react-native-ble-manager.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://git@github.com/zhanguangao/react-native-ble-manager.git#a44f2ce5eba555aed3ecb827a94781e83d678086",
+  "_spec": "git+https://git@github.com/zhanguangao/react-native-ble-manager.git",
+  "_where": "/Users/app/Documents/HuaLai/hl_rn/hlreactnativesdk",
+  "author": {
+    "name": "Innove",
+    "url": "https://github.com/innoveit"
   },
   "bugs": {
     "url": "https://github.com/innoveit/react-native-ble-manager/issues"
   },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "A BLE module for react native.",
+  "homepage": "https://github.com/innoveit/react-native-ble-manager#readme",
   "keywords": [
     "react-native",
     "android",
@@ -20,12 +40,16 @@
     "low energy"
   ],
   "license": "Apache-2.0",
-  "author": {
-    "name": "Innove",
-    "url": "https://github.com/innoveit"
+  "main": "BleManager",
+  "name": "react-native-ble-manager",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/innoveit/react-native-ble-manager.git"
   },
   "scripts": {
-    "version": "git add -A",
-    "postversion": "git push && git push --tags"
-  }
+    "postversion": "git push && git push --tags",
+    "version": "git add -A"
+  },
+  "types": "./index.d.ts",
+  "version": "6.6.10"
 }
